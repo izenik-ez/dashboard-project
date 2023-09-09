@@ -7,31 +7,10 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <container>
-            <header>
-                <section>
-                <img alt="search" src="icons/search.svg"/>
-                <input name="search" type="text" value=""/>
-                <img alt="notifications" src="icons/notifications.svg"/>
-                <img alt="panda" src="avatars/panda.png"/>
-                <p>Morgan Oakley</p>
-                </section>
-                
-                <section>
-                    <div>
-                        <img alt="" src="avatar/panda.png">
-                        <p>Hi, there</p>
-                        <p>Morgan Oakley (@morgan)</p>
-                    </div>
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </section>
-                
-            </header>
+        <div id="dashboard">
             <sidebar>
                 <div>
-                    <img alt="" src=""/>
+                    <img alt="" src="icons/dashboard.svg"/>
                     <p>Dashboard</p>
                 </div>
                 <div>
@@ -71,7 +50,165 @@
                     <p>Privacy</p>
                 </div>
             </sidebar>
-            <projects></projects>
-        </container>
+            <div id="content">
+            <header>
+                <section>
+                    <img alt="search" src="icons/search.svg"/>
+                    <input name="search" type="text" value=""/>
+                    <img alt="notifications" src="icons/notifications.svg"/>
+                    <img alt="panda" src="avatars/panda.png"/>
+                    <p>Morgan Oakley</p>
+                </section>
+                
+                <section>
+                    <div>
+                        <img alt="" src="avatar/panda.png">
+                        <p>Hi, there</p>
+                        <p>Morgan Oakley (@morgan)</p>
+                    </div>
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </section>
+                
+            </header>
+            
+                    <section id="projects">
+                        <p>Your projects</p>
+                        <article>
+                            <header>
+                                Super Cool Project
+                            </header>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet mi sem. Nulla tincidunt eget nunc sed gravida. Donec egestas suscipit magna, ut facilisis leo maximus id. 
+                            </p>
+                            <footer>
+                                <img alt="" src="icons/fave.svg"/>
+                                <img alt="" src="icons/watch.svg"/>
+                                <img alt="" src="icons/fork.svg"/>
+                            </footer>
+                        </article>
+                        <article>
+                            <header>
+                                Less Cool Project
+                            </header>
+                            <p>
+                                Vestibulum eget feugiat sem. Nunc mauris ante, dictum at leo eget, condimentum posuere dui. Donec pharetra consequat lobortis.
+                            </p>
+                            <footer>
+                                <img alt="" src="icons/fave.svg"/>
+                                <img alt="" src="icons/watch.svg"/>
+                                <img alt="" src="icons/fork.svg"/>
+                            </footer>
+                        </article>
+                        <article>
+                            <header>
+                                Imposible App
+                            </header>
+                            <p>
+                                Pellentesque vitae malesuada elit. Nulla mattis ex turpis, id porttitor urna ornare consequat. In lacinia dui nisi, sit amet sollicitudin urna aliquam ac. Cras eu nunc lobortis, imperdiet nunc mollis, condimentum dolor. Vivamus pretium lectus et leo mollis pulvinar id id nisl.
+                            </p>
+                            <footer>
+                                <img alt="" src="icons/fave.svg"/>
+                                <img alt="" src="icons/watch.svg"/>
+                                <img alt="" src="icons/fork.svg"/>
+                            </footer>
+                        </article>
+                        <article>
+                            <header>
+                                Easy Peasy App
+                            </header>
+                            <p>
+                                Pellentesque vitae malesuada elit. Nulla mattis ex turpis, id porttitor urna ornare consequat. In lacinia dui nisi, sit amet sollicitudin urna aliquam ac. Cras eu nunc lobortis, imperdiet nunc mollis, condimentum dolor. Vivamus pretium lectus et leo mollis pulvinar id id nisl. 
+                            </p>
+                            <footer>
+                                <img alt="" src="icons/fave.svg"/>
+                                <img alt="" src="icons/watch.svg"/>
+                                <img alt="" src="icons/fork.svg"/>
+                            </footer>
+                        </article>
+                        <article>
+                            <header>
+                                Ad Blocker
+                            </header>
+                            <p>
+                                Praesent consectetur auctor purus vel sollicitudin. In efficitur, lacus vitae imperdiet faucibus, est nisl finibus sem, eu ultrices massa mi eget velit. Donec at eleifend magna. Duis sagittis purus at mi dictum pharetra. 
+                            </p>
+                            <footer>
+                                <img alt="" src="icons/fave.svg"/>
+                                <img alt="" src="icons/watch.svg"/>
+                                <img alt="" src="icons/fork.svg"/>
+                            </footer>
+                        </article>
+                        <article>
+                            <header>
+                                Money Maker
+                            </header>
+                            <p>
+                                Nulla nisl tortor, facilisis in laoreet nec, ornare sit amet leo. Nam velit purus, consequat eget sodales et, malesuada quis neque. Sed eu luctus ante
+                            </p>
+                            <footer>
+                                <img alt="" src="icons/fave.svg"/>
+                                <img alt="" src="icons/watch.svg"/>
+                                <img alt="" src="icons/fork.svg"/>
+                            </footer>
+                        </article>
+                    </section>
+                    <sidebar id="right-bar">
+                        <section id="announcements">
+                            <article>
+                                <header>Site Maintenance</header>
+                                <p>Vivamus et lectus eu neque commodo mollis. Phasellus consectetur scelerisque lacus, eu semper enim aliquam et. Phasellus feugiat elit vitae quam egestas scelerisque</p>
+                            </article>
+                            <article>
+                                <header>Community Share Day</header>
+                                <p>Quisque a nibh enim. Etiam quis eros id metus posuere ornare sit amet maximus magna. Aliquam erat volutpat.</p>
+                            </article>
+                            <article>
+                                <header>Updated Privacy Policy</header>
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac ultrices nisl. Mauris bibendum diam at est posuere, id hendrerit ex pulvinar. </p>
+                            </article>                    
+                        </section>
+                        <section id="Trending">
+                            <div class="user">
+                                <img alt="" src=""/>
+                                <p class="user-name">
+                                    @tegan
+                                </p>
+                                <p class="user-description">
+                                    World Pace Builder
+                                </p>
+                            </div>
+                            <div class="user">
+                                <img alt="" src=""/>
+                                <p class="user-name">
+                                    @morgan
+                                </p>
+                                <p class="user-description">
+                                    Super Cool Project
+                                </p>
+                            </div>
+                            <div class="user">
+                                <img alt="" src=""/>
+                                <p class="user-name">
+                                    @kendall
+                                </p>
+                                <p class="user-description">
+                                    Life Changing App
+                                </p>
+                            </div>
+                            <div class="user">
+                                <img alt="" src=""/>
+                                <p class="user-name">
+                                    @alex
+                                </p>
+                                <p class="user-description">
+                                    No Traffic Maker
+                                </p>
+                            </div>
+                        </section>
+                    </sidebar>
+            </div>
+        </div>
     </body>
 </html>
