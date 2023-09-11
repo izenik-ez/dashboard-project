@@ -2,3 +2,119 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+#dashboard{
+    display: grid;
+    /*grid-template-columns: 1fr 3fr;    */
+    grid-template-areas:
+        "sidebar header header header"
+        "sidebar header header header"
+        "sidebar projects projects announcements"
+        "sidebar projects projects announcements"
+        "sidebar projects projects trending"
+        "sidebar projects projects trending";
+    gap: 10px;
+    
+}
+
+.grid-sidebar{
+    grid-area: sidebar;
+    color: white;
+    background-color: #24A5EF; 
+}
+
+#sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+
+
+#sidebar > img{
+    color: white;
+}
+
+#sidebar > .header{
+    display: grid;               
+    grid-template-columns: 0.6fr 0.6fr;
+    align-items: baseline;
+}
+
+
+#sidebar > .header > img{
+    justify-self: center;  
+}
+
+#sidebar > .header > p{
+    justify-self: left;
+    font-size: 30px;
+}
+/*
+#sidebar > .home{
+    display:grid;
+    grid-template-columns: 0.6fr;
+    align-items: baseline;
+}
+*/
+#sidebar > .home > div{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    align-items: baseline;    
+}
+
+#sidebar > .home > div > p{
+    justify-self: left;
+    gap: 1px;
+}
+
+.grid-header{
+    grid-area: header;
+}
+.grid-projects{
+    grid-area: projects
+}
+.grid-announcements{
+    grid-area: announcements;
+}
+.grid-trending{
+    grid-area: trending;
+}
+.avatar{
+    max-width:5%;
+    height: auto;
+}
+/*
+#container{
+    display:grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+#content{
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+    row-gap: 40px;
+    column-gap: 30px;
+}
+#projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr
+}
+*/
+
+
+
+#projects>article{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
