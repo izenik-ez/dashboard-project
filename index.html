@@ -5,90 +5,100 @@
         <title>Dashboard Project</title>
         <link href="styles.css" rel="stylesheet"/>
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet">        
+
     </head>
     <body>
         <div id="dashboard">
-            <ul id="sidebar" class="grid-sidebar">
-               <li class="extra-margin">
-                   <a href="#">                       
-                        <img alt="" src="icons/dashboard.svg"/>
-                        Dashboard</a>
-                </li>               
-                <li>
-                    <a href="#">
-                        <i class="fa fa-home fa-lg"></i>
-                        <!-- <img alt="" src="icons/home.svg"/> -->
-                        Home</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-regular fa-address-card fa-lg"></i>
-                        Profile</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-light fa-message fa-lg"></i>
-                        Messages</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-solid fa-history fa-lg"></i>
-                        History</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-solid fa-tasks fa-lg"></i>
-                        Tasks</a>
-                </li>
-                <li class="extra-margin">
-                    <a href="#">
-                        <i class="fa fa-solid fa-users"></i>
-                        <!-- <img alt="" src="icons/community.svg"/> -->
-                        Communities</a>
-                </li>
-                
-                <li>
-                    <a href="#">
-                        <i class="fa fa-solid fa-gear fa-lg"></i>
-                        Settings</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-solid fa-question fa-lg"></i>
-                        Support</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-regular fa-shield-check fa-lg"></i>
-                        Privacy</a>
-                </li>
-            </ul>
-            <header id="header" class="grid-header">
-                <section>
-                    <i class="fas fa-search"></i>
+            <header id="header-section" class="grid-header">
+                <section class="search">
+                    <span class="mdi mdi-magnify"></span>
                     <input name="search" type="text" value=""/>
                     
-                    <i class="fa-solid fa-bell"></i>
+                    <span class="mdi mdi-bell-ring-outline"></span>
                     <img class="avatar" alt="panda" src="avatars/panda.png"/>
                     <p>Morgan Oakley</p>
                 </section>
                 
-                <section>
-                    <div>
+                <section class="user">
+                    <div class="user-data">
                         <img class="avatar" alt="" src="avatars/panda.png">
-                        <p>Hi, there</p>
-                        <p>Morgan Oakley (@morgan)</p>
+                        <div>
+                            <p>Hi, there</p>
+                            <p>Morgan Oakley (@morgan)</p>
+                        </div>
                     </div>
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+
+                    <div class="buttons">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
                 </section>
-                
             </header>
-            <div class="grid-projects">
-                <p>Your projects</p>
-                <section id="projects">
+            <sidebar id="sidebar-section" class="grid-sidebar">
+                <ul id="sidebar">
+                    <li class="extra-margin">
+                        <a href="#">                       
+                            <!-- <img alt="" src="icons/dashboard.svg"/> -->
+                            <span class="mdi mdi-view-dashboard"></span>
+                            Dashboard</a>
+                    </li>               
+                    <li>
+                        <a href="#">
+                            <span class="mdi mdi-home"></span>
+                            <!-- <img alt="" src="icons/home.svg"/> -->
+                            Home</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="mdi mdi-card-account-details-outline"></span>
+                            Profile</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="mdi mdi-message"></span>
+                            Messages</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="mdi mdi-clock-time-three"></span>
+                            History</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="mdi mdi-note-multiple"></span>
+                            Tasks</a>
+                    </li>
+                    <li class="extra-margin">
+                        <a href="#">
+                            <span class="mdi mdi-account-group"></span>
+                            <!-- <img alt="" src="icons/community.svg"/> -->
+                            Communities</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <span class="mdi mdi-cog"></span>
+                            Settings</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="mdi mdi-help-box"></span>
+                            Support</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="mdi mdi-shield-check"></i>
+                            Privacy</a>
+                    </li>
+                </ul>
+            </sidebar>
+            <section id="projects-section" class="grid-projects">
+                <header>
+                    <h1>Your projects</h1>
+                </header>
+                <div id="projects" class="card-style">
                     <article>
                         <header>
                             Super Cool Project
@@ -167,58 +177,78 @@
                             <img alt="" src="icons/fork.svg"/>
                         </footer>
                     </article>
-                </section>
-            </div>
-            <section id="announcements" class="grid-announcements">
-                <article>
-                    <header>Site Maintenance</header>
-                    <p>Vivamus et lectus eu neque commodo mollis. Phasellus consectetur scelerisque lacus, eu semper enim aliquam et. Phasellus feugiat elit vitae quam egestas scelerisque</p>
-                </article>
-                <article>
-                    <header>Community Share Day</header>
-                    <p>Quisque a nibh enim. Etiam quis eros id metus posuere ornare sit amet maximus magna. Aliquam erat volutpat.</p>
-                </article>
-                <article>
-                    <header>Updated Privacy Policy</header>
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac ultrices nisl. Mauris bibendum diam at est posuere, id hendrerit ex pulvinar. </p>
-                </article>                    
+                </div>
             </section>
-            <section id="trending" class="grid-trending">
-                <div class="user">
-                    <img alt="" src=""/>
-                    <p class="user-name">
-                        @tegan
-                    </p>
-                    <p class="user-description">
-                        World Pace Builder
-                    </p>
+            
+            <section id="announcements-section" class="grid-announcements">
+                <header>
+                    <h1>Announcements</h1>
+                </header>
+                <div id="announcements">
+                    <article>
+                        <header>Site Maintenance</header>
+                        <p>Vivamus et lectus eu neque commodo mollis. Phasellus consectetur scelerisque lacus, eu semper enim aliquam et. Phasellus feugiat elit vitae quam egestas scelerisque</p>
+                    </article>
+                    <article>
+                        <header>Community Share Day</header>
+                        <p>Quisque a nibh enim. Etiam quis eros id metus posuere ornare sit amet maximus magna. Aliquam erat volutpat.</p>
+                    </article>
+                    <article>
+                        <header>Updated Privacy Policy</header>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac ultrices nisl. Mauris bibendum diam at est posuere, id hendrerit ex pulvinar. </p>
+                    </article>
                 </div>
-                <div class="user">
-                    <img alt="" src=""/>
-                    <p class="user-name">
-                        @morgan
-                    </p>
-                    <p class="user-description">
-                        Super Cool Project
-                    </p>
-                </div>
-                <div class="user">
-                    <img alt="" src=""/>
-                    <p class="user-name">
-                        @kendall
-                    </p>
-                    <p class="user-description">
-                        Life Changing App
-                    </p>
-                </div>
-                <div class="user">
-                    <img alt="" src=""/>
-                    <p class="user-name">
-                        @alex
-                    </p>
-                    <p class="user-description">
-                        No Traffic Maker
-                    </p>
+            </section>
+            
+            <section id="trending-section">
+                <header>
+                    <h1>Trending</h1>
+                </header>
+                <div id="trending" class="card-style">
+                    <article class="user">
+                        <img src="https://cdn-icons-png.flaticon.com/512/194/194938.png" class="user-avatar-small">
+                        <div>
+                        <p class="user-name">
+                            @tegan
+                        </p>
+                        <p class="user-description">
+                            World Pace Builder
+                        </p>
+                        </div>
+                    </article>
+                    <article class="user">
+                        <img src="https://cdn-icons-png.flaticon.com/512/219/219969.png" class="user-avatar-small">
+                        <div>
+                        <p class="user-name">
+                            @morgan
+                        </p>
+                        <p class="user-description">
+                            Super Cool Project
+                        </p>
+                        </div>
+                    </article>
+                    <article class="user">
+                        <img src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" class="user-avatar-small">
+                        <div>
+                        <p class="user-name">
+                            @kendall
+                        </p>
+                        <p class="user-description">
+                            Life Changing App
+                        </p>
+                        </div>
+                    </article>
+                    <article class="user">
+                        <img src="https://truesun.in/wp-content/uploads/2021/08/62681-flat-icons-face-computer-design-avatar-icon.png" class="user-avatar-small">
+                        <div>
+                        <p class="user-name">
+                            @alex
+                        </p>
+                        <p class="user-description">
+                            No Traffic Maker
+                        </p>
+                        </div>
+                    </article>
                 </div>
             </section>
         </div>
